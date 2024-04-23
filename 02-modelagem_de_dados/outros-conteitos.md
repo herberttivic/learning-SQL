@@ -20,6 +20,7 @@
   categoria(id, nome)
   produto(id, nome, id_categoria)
   ```
+---
 ### Relacionamento unário
 - também chamado de grau 1
 - é quando uma entidade se relaciona com ela mesma
@@ -33,12 +34,12 @@
       cpf_mae : bigint (relacionamento com pessoa.cpf)
     );
     ```
-
+---
 ### Relacionamento binário
 - também chamado de grau 2
 - é uma relação entre objetos de entidades diferentes
 - ex: produto -> categoria
-
+---
 ### Relacionamento ternário
 -  também chamado de grau 3
 - é quando 3 entidades se ligam através de um mesmo relacionamento
@@ -51,7 +52,7 @@
       id_forma_de_pagamento : string
     );
     ```
-  
+---
 ### Cardialidade (máxima)
 - define a quantidade máxima de ocorrência de uma entidade que será relacionada com outra entidade
 - tipos de relacionamento (qtd):
@@ -60,7 +61,8 @@
   - n:m (many to many)
 - obs : many to many sempre exige uma entidade pivô
 - ex : o objeto VENDEDOR só pode conter até 3 PRODUTOS
-- 
+
+---
 ### Cardialidade (mínima)
 - define a quantidade mínima de ocorrência de uma entidade que será relacionada com outra entidade
 - ex:
